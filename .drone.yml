@@ -19,14 +19,6 @@ steps:
       from_secret: datastore
     NETWORK:
       from_secret: network
-    SSH_USERNAME:
-      from_secret: ssh_username
-    SSH_PASSWORD:
-      from_secret: ssh_password
-    WINRM_USERNAME:
-      from_secret: winrm_username
-    WINRM_PASSWORD:
-      from_secret: winrm_password
 
 steps:
 - name: build-windows-core
@@ -46,14 +38,6 @@ steps:
       from_secret: datastore
     NETWORK:
       from_secret: network
-    SSH_USERNAME:
-      from_secret: ssh_username
-    SSH_PASSWORD:
-      from_secret: ssh_password
-    WINRM_USERNAME:
-      from_secret: winrm_username
-    WINRM_PASSWORD:
-      from_secret: winrm_password
 
 steps:
 - name: build-windows-gui
@@ -73,14 +57,6 @@ steps:
       from_secret: datastore
     NETWORK:
       from_secret: network
-    SSH_USERNAME:
-      from_secret: ssh_username
-    SSH_PASSWORD:
-      from_secret: ssh_password
-    WINRM_USERNAME:
-      from_secret: winrm_username
-    WINRM_PASSWORD:
-      from_secret: winrm_password
 
 - name: teams-webhook
   image: jdamata/drone-teams

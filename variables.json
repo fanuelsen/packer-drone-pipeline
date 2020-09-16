@@ -7,9 +7,9 @@
    "network": "{{ env `NETWORK` }}", 
    "folder": "templates", 
    
-   "ssh_username": "{{ env `SSH_USERNAME` }}", 
-   "ssh_password": "{{ env `SSH_PASSWORD` }}",   
+   "ssh_username": "packer", 
+   "ssh_password": "packer",   
 
-   "winrm_username": "{{ env `WINRM_USERNAME` }}", 
-   "winrm_password": "{{ env `WINRM_PASSWORD` }}" 
+   "winrm_username": "packer", 
+   "winrm_password": "packer" 
  }
