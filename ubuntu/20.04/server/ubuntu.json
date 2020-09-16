@@ -34,7 +34,7 @@
       "ssh_username": "{{ user `ssh_username` }}",
       "type": "vsphere-iso",
       "vm_name": "{{ user `vm_name` }}",
-      "notes": "{{ timestamp }}",
+      "notes": "{{ isotime }}",
       "network_adapters": [
         {
           "network": "{{ user `network` }}",

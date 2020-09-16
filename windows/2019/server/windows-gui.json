@@ -30,6 +30,7 @@
       "winrm_timeout": "8h",
       "winrm_use_ssl": true,
       "winrm_username": "{{ user `winrm_username` }}",
+      "notes": "{{ isotime }}",
       "network_adapters": [
         {
           "network": "{{ user `network` }}",
