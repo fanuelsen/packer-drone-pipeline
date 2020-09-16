@@ -24,7 +24,7 @@ steps:
 - name: build-windows-core
   image: hashicorp/packer
   commands:
-     - packer build -force -only=vsphere-iso -var-file=variables.json -var-file=./windows/2019/server/template.json ./windows/2019/server/windows-core.json
+    # - packer build -force -only=vsphere-iso -var-file=variables.json -var-file=./windows/2019/server/template.json ./windows/2019/server/windows-core.json
   environment:
     VCENTER_SERVER:
       from_secret: vcenter_server
@@ -43,7 +43,7 @@ steps:
 - name: build-windows-gui
   image: hashicorp/packer
   commands:
-     - packer build -force -only=vsphere-iso -var-file=variables.json -var-file=./windows/2019/server/template.json ./windows/2019/server/windows-gui.json
+    # - packer build -force -only=vsphere-iso -var-file=variables.json -var-file=./windows/2019/server/template.json ./windows/2019/server/windows-gui.json
   environment:
     VCENTER_SERVER:
       from_secret: vcenter_server
@@ -63,3 +63,7 @@ steps:
   settings:
     webhook: 
       from_secret: WEBHOOK
+
+trigger:
+  branch:
+  - master
