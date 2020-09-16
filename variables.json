@@ -1,0 +1,15 @@
+{ 
+   "vcenter_server": "{{ env `VCENTER_SERVER` }}", 
+   "vcenter_username": "{{ env `VCENTER_USERNAME` }}", 
+   "vcenter_password": "{{ env `VCENTER_PASSWORD` }}", 
+   "vsphere_cluster": "{{ env `VSPHERE_CLUSTER` }}",
+   "datastore": "{{ env `DATASTORE`}}",
+   "network": "{{ env `NETWORK` }}", 
+   "folder": "templates", 
+   
+   "ssh_username": "{{ env `SSH_USERNAME` }}", 
+   "ssh_password": "{{ env `SSH_PASSWORD` }}",   
+
+   "winrm_username": "{{ env `WINRM_USERNAME` }}", 
+   "winrm_password": "{{ env `WINRM_PASSWORD` }}" 
+ }
