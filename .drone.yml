@@ -20,7 +20,6 @@ steps:
     NETWORK:
       from_secret: network
 
-steps:
 - name: build-windows-core
   image: hashicorp/packer
   commands:
@@ -39,7 +38,6 @@ steps:
     NETWORK:
       from_secret: network
 
-steps:
 - name: build-windows-gui
   image: hashicorp/packer
   commands:
