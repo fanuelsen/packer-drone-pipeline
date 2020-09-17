@@ -61,7 +61,3 @@ steps:
   settings:
     webhook: 
       from_secret: WEBHOOK
-
-trigger:
-  branch:
-  - master
