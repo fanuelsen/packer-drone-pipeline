@@ -1,6 +1,6 @@
 kind: pipeline
 name: packer
-timeout: 240
+
 
 steps:
 - name: build-ubuntu
@@ -41,6 +41,7 @@ steps:
 
 - name: build-windows-gui
   image: hashicorp/packer
+  timeout: 90m
   commands:
      - packer build -force -only=vsphere-iso -var-file=variables.json -var-file=./windows/2019/server/template.json ./windows/2019/server/windows-gui.json
   environment:
